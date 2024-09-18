@@ -1,0 +1,27 @@
+
+
+const App = () => {
+  const names = ['Masuma', 'Manisha', 'Iqra'];
+  const loggedIn = false;
+
+  const styles = {
+    color: 'red', 
+    fontSize: '24px'
+  }
+  return (
+    <>
+    <div classNameName="text-2xl">App</div>
+    <ul>
+      {names.map((name, index) => (
+        <li key={index}>{name}</li>
+      ))}
+    </ul>
+      {loggedIn && <h1>hello</h1>}
+
+      <p style={styles}>hi</p>
+    </>
+    
+  )
+}
+
+export default App
