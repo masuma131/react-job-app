@@ -7,7 +7,9 @@ import NotFoundPage from './pages/NotFoundPage'
 import JobPage, {jobLoader} from './pages/JobPage'
 import AddJobPage from './pages/AddJobPage'
 import EditJobPage from './pages/EditJobPage'
-import { ContactPage } from './pages/ContactPage'
+import SignUpPage from './pages/SignUpPage'
+import SignInPage from './pages/SignInPage'
+import SignOutPage from './pages/SignOutPage'
 
 //:id represent it's variable for whatever the id is (passes in Link url like here from JobPage)
 
@@ -58,9 +60,12 @@ const router = createBrowserRouter(
 
     <Route path='/edit-job/:id' element={<EditJobPage updateJobSubmit={updateJob}/>} loader={jobLoader}/>
     <Route path='/jobs/:id' element={<JobPage deleteJob={deleteJob}/>} loader={jobLoader}/>
-    <Route path='/contact-page' element={<ContactPage/>}/>
     
     <Route path='*' element={<NotFoundPage/>}/>
+    <Route path='/sign-up' element={<SignUpPage/>}/>
+    <Route path='/sign-in' element={<SignInPage/>}/>
+    <Route path='/sign-out' element={<SignOutPage/>}/>
+    
   </Route>
       
   ))

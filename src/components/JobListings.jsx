@@ -1,4 +1,4 @@
-// import jobs from "../jobs.json"
+// JobListings component: Displays a list of job postings with a loading spinner and fetches data from the API.
 import JobListing from "./JobListing"
 import Spinner from "./Spinner"
 
@@ -14,6 +14,7 @@ const JobListings = ({isHome = false}) => {
   const [loading, setLoading] = useState(true)
 
   //  useEffect(()=> {}, []). So, everytime the variable inside the square bracket changes, use effect runs. If no varibale keep the sqaure bracket otherwise it will run in a infinite loop
+  // Fetch jobs when component mounts or when isHome prop changes
   useEffect(()=> {
     //for the asynchrous access we need this func
     const fetchJobs = async() => {
@@ -35,7 +36,9 @@ const JobListings = ({isHome = false}) => {
 
     fetchJobs()
 
-  }, [])
+  }, [isHome]) // Re-run if isHome changes
+
+  
 
   return (
      <section className="bg-blue-50 px-4 py-10">

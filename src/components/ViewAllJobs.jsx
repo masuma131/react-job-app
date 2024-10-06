@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 
+// Simple component to display a button linking to all jobs
 const ViewAllJobs = () => {
 
   return (

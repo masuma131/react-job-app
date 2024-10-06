@@ -23,13 +23,3 @@ dist-ssr
 *.sln
 *.sw?
 .env
-
-
-
-# not needed right now
-services
-src/pages/SignInPage.jsx
-src/pages/SignUpPage.jsx
-
-src/components/SignIn.jsx
-src/components/SignUp.jsx

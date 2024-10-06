@@ -1,3 +1,4 @@
+// Hero component: A banner section that displays a title and subtitle.
 const Hero = ({title="Become a React Dev", subtitle = "Find the React job that fits your skills and needs"}) =>  {
     return (
     <section className="bg-indigo-700 py-20 mb-4">

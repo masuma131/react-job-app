@@ -1,3 +1,4 @@
+// JobListing component: Displays individual job listings with details and a button to show more description.
 
 import { useState } from "react"
 import {FaMapMarker} from "react-icons/fa"

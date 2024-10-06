@@ -1,3 +1,4 @@
+// HomeCards component: A section with two cards for different user groups (Developers and Employers).
 import Card from "./Card";
 import { Link } from "react-router-dom"
 

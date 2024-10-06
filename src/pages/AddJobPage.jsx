@@ -6,6 +6,7 @@ import {toast} from "react-toastify"
 
 
 const AddJobPage = ({addJobSubmit}) => {
+  // State variables to store job information input by the user
   const [title, setTitle] = useState('');
   const [type, setType] = useState('Full-Time');
   const [location, setLocation] = useState('');
@@ -16,8 +17,10 @@ const AddJobPage = ({addJobSubmit}) => {
   const [contactEmail, setContactEmail] = useState('');
   const [contactPhone, setContactPhone] = useState('');
 
+  // useNavigate hook to programmatically navigate to different routes
   const navigate = useNavigate();
 
+  // Function to handle form submission
   const submitForm = (e) => {
     e.preventDefault();
 
